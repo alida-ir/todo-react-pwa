@@ -1,0 +1,108 @@
+*,
+body {
+  font-family: "Vazir FD";
+}
+
+.form-control:focus,
+.btn-check:focus+.btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.form-control {
+  border-radius: .25em 0 0 .25em !important;
+}
+
+.input-group>.btn {
+  border-radius: 0 .25em .25em 0 !important;
+}
+
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: .75;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+}
+
+.close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: .25em;
+  color: #000;
+  background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E") 50%/1em auto no-repeat;
+  border: 0;
+  border-radius: .25rem;
+  opacity: .5;
+  left: 15px;
+  position: absolute;
+}
+
+.close>span {
+  display: none;
+}
+
+.bg-danger {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+
+span[bg=danger] {
+  background-color: #dc3545;
+}
+
+span[bg=success] {
+  background-color: #198754;
+}
+
+.list-group-item>div>.badge {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.list-group-item {
+  height: 60px;
+  align-items: center;
+  font-size: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.list-group-item.active {
+  border-color: #bdbdbd;
+  background-color: #efefef;
+  color: black;
+  text-decoration: line-through;
+  text-decoration-color: #ff1616;
+}
+.dropdown-menu-dark {
+  background-color: #343a40 !important;
+  color: #dee2e6;
+  border-color: rgba(0, 0, 0, .15);
+}
+
+/* 575 */
+@media  (max-width:585px) {
+  .dropdown-menu{
+    left: 0;
+    margin-top: 5px !important;
+  }
+    .d-xs-none{
+      display: none !important;
+    }
+}
